@@ -4,6 +4,25 @@
 #include <stdlib.h>
 using namespace std;
 
+vector<vector<string>> read_file(string myfilename) {
+
+    vector <vector<string>> result;
+    vector <string> row;
+    string line, word;
+
+    fstream file(myfilename);
+    if (file.is_open()) {
+        while (getline(file, line)) {
+            row.clear();
+            stringstream s(line);
+            while (getline(s, word, ',')) {
+                row.push_back(word);
+            }
+            result.push_back(row);
+        }
+    }
+    return result;
+}
 
 void menu::Menu(){
     do{
@@ -30,7 +49,27 @@ void menu::Options() {
         optionsMenu();
         switch (choice2) {
             case 1:{
-                //código ocupação de turma
+                string ucode = "";
+                string classcode = "";
+                int count = 0;
+
+                cout <<  "\nEnter ucode: ";
+                cin >> ucode;
+
+                cout << "\nEnter classcode: ";
+                cin >> classcode;
+
+                vector<vector<string>> aux = read_file("students_classes.csv");
+                for(int i = 0; i < aux.size(); i++){
+                    string X = (aux[i][3]);
+                    string Y = (aux[i][2]);
+                    X.resize(7);
+                    if (X == classcode and Y == ucode){
+                        count++;
+                    }
+                }
+                cout << "\nThe number of students that are on that class/Uc is " << count;
+                cout << string(5, '\n');
                 break;
             }
             case 2:{

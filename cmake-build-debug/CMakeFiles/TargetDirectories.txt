@@ -1,4 +1,3 @@
-/home/tomas/AED_PROJETO/cmake-build-debug/CMakeFiles/AED_PROJETO.dir
 /home/tomas/AED_PROJETO/cmake-build-debug/CMakeFiles/TextManipulation.dir
 /home/tomas/AED_PROJETO/cmake-build-debug/CMakeFiles/edit_cache.dir
 /home/tomas/AED_PROJETO/cmake-build-debug/CMakeFiles/rebuild_cache.dir

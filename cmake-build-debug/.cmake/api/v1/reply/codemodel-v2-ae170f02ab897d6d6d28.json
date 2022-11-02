@@ -15,8 +15,7 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						0,
-						1
+						0
 					]
 				}
 			],
@@ -31,8 +30,7 @@
 					"name" : "AED_PROJETO",
 					"targetIndexes" : 
 					[
-						0,
-						1
+						0
 					]
 				}
 			],
@@ -40,15 +38,8 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "AED_PROJETO::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-AED_PROJETO-Debug-b7011da0e195ce8ee9af.json",
-					"name" : "AED_PROJETO",
-					"projectIndex" : 0
-				},
-				{
-					"directoryIndex" : 0,
 					"id" : "TextManipulation::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-TextManipulation-Debug-d4f625155820bebdf443.json",
+					"jsonFile" : "target-TextManipulation-Debug-fea97d66da2355046f97.json",
 					"name" : "TextManipulation",
 					"projectIndex" : 0
 				}

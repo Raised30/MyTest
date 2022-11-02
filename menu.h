@@ -4,6 +4,9 @@
 
 #ifndef AED_PROJETO_MENU_H
 #define AED_PROJETO_MENU_H
+#include <sstream>
+#include <fstream>
+#include "student.h"
 
 
 class menu {
