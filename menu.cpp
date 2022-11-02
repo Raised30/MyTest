@@ -135,7 +135,7 @@ void menu::optionsMenu(void) {
     cout << "\n\nOptions Menu\n";
     cout << "1 - Classes ocupation\n";
     cout << "2 - Schedule of a student\n";
-    cout << "3 - Students in a certain class\n";
+    cout << "3 - Students in a certain UC\n";
     cout << "4 - Back\n";
     cout << "Please choose: ";
     cin >> choice2;
