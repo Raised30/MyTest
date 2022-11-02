@@ -10,7 +10,8 @@ vector<vector<string>> read_file(string myfilename) {
     vector <string> row;
     string line, word;
 
-    fstream file(myfilename);
+    ifstream file;
+    file.open(myfilename);
     if (file.is_open()) {
         while (getline(file, line)) {
             row.clear();
@@ -77,7 +78,24 @@ void menu::Options() {
                 break;
             }
             case 3:{
-                //código estudantes em certa turma
+                //código estudantes em certa UC
+                string ucode = "";
+                int count = 0;
+
+                cout <<  "\nEnter ucode: ";
+                cin >> ucode;
+
+                vector<vector<string>> aux = read_file("students_classes.csv");
+                for(int i = 0; i < aux.size(); i++){
+
+                    string Y = (aux[i][2]);
+
+                    if (Y == ucode){
+                        count++;
+                    }
+                }
+                cout << "\nThe number of students that are on that UCeu Sem  is " << count;
+                cout << string(5, '\n');
                 break;
             }
             case 4:{
